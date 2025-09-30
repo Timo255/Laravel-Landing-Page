@@ -25,6 +25,5 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
 # Expose Laravel port
 EXPOSE 8000
 
-# Start Laravel server
-CMD ["sh", "-c", "php artisan config:clear && php artisan config:cache && php artisan serve --host=0.0.0.0 --port=8000"]
-
+# Start PHP's built-in web server from /public
+CMD ["php", "-S", "0.0.0.0:8000", "-t", "public"]
