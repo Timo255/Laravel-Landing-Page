@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   @include('css.css')
+  @livewireStyles
 </head>
 <body>
 
@@ -17,7 +18,9 @@
     <!-- About section -->
     @include('include.About')
 
-    <!-- About section -->
+    <!-- Testimonial section -->
     @include('include.Testimonial')
+
+    @livewireScripts
 </body>
 </html>
