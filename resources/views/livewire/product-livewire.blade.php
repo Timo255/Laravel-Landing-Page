@@ -6,7 +6,7 @@
                 <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptates rerum autem nesciunt aliquam iure, tempore exercitationem repellendus
                     dolorem error reiciendis ut cum optio illum doloribus culpa.</p>
-                <button class="topOffer" id="topOffer-btn" wire:click="setOpenPopUp(true)">Claim Deal
+                <button class="topOffer" id="topOffer-btn" wire:click="openPopUp">Claim Deal
                     Now</button>
             </div>
             <div class="product-image">
@@ -26,7 +26,7 @@
 
         <!-- Popup section -->
         <div class='popup {{ $openPopUp ? 'active' : '' }}'>
-            <div class="popup-close-btn" wire:click="setOpenPopUp(false)">
+            <div class="popup-close-btn" wire:click="closePopUp">
                 <img src="images/close-btn1.png" alt="" />
             </div>
             <h1 class="popH1">Subscribe and check your Email</h1>
