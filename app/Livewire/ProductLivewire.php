@@ -24,17 +24,22 @@ class ProductLivewire extends Component
     /**
      * Open the popup modal
      */
-    public function openPopUp(): void
-    {
-        $this->openPopUp = true;
-    }
+    // public function openPopUp(): void
+    // {
+    //     $this->openPopUp = true;
+    // }
 
-    /**
-     * Close the popup modal
-     */
-    public function closePopUp(): void
+    // /**
+    //  * Close the popup modal
+    //  */
+    // public function closePopUp(): void
+    // {
+    //     $this->openPopUp = false;
+    // }
+
+    public function setOpenPopUp($openPop)
     {
-        $this->openPopUp = false;
+        $this->openPopUp = $openPop;
     }
 
     /**
