@@ -8,7 +8,7 @@
                 Voluptates rerum autem nesciunt aliquam iure, tempore exercitationem repellendus
                 dolorem error reiciendis ut cum optio illum doloribus culpa.
             </p>
-            <button class="topOffer" wire:click="openPopUp">
+            <button class="topOffer" wire:click="setPopUp(true)">
                 Claim Deal Now
             </button>
         </div>
@@ -30,7 +30,7 @@
     <!-- Popup modal -->
     <div class="popup {{ $openPopUp ? 'active' : '' }}">
         <!-- Close button -->
-        <div class="popup-close-btn" wire:click="closePopUp">
+        <div class="popup-close-btn" wire:click="setPopUp(false)">
             <img src="{{ asset('images/close-btn1.png') }}" alt="Close" />
         </div>
 
