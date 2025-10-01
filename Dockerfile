@@ -25,10 +25,9 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
 # Expose Laravel port
 EXPOSE 8000
 
-# Start PHP's built-in web server from /public
-# Also clear caches at container startup to ensure Livewire config is fresh
+# Start Laravel server with cache clears
 CMD sh -c "php artisan config:clear && \
            php artisan cache:clear && \
            php artisan view:clear && \
            php artisan route:clear && \
-           php -S 0.0.0.0:8000 -t public"
+           php artisan serve --host=0.0.0.0 --port=8000"
