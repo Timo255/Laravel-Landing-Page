@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  @include('css.css')
-  @livewireStyles
+    @include('css.css')
+
+    @livewireStyles
 </head>
 <body>
 
