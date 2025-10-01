@@ -15,16 +15,14 @@
 
         <!-- Product image -->
         <div class="product-image">
-            <img 
-                srcset="
-                    {{ $BigWatch }} 333w, 
-                    {{ $mediumWatch }} 254w, 
-                    {{ $smallWatch }} 206w"
-                sizes="(min-width: 1200px) 333px, 
-                       (min-width: 768px) 254px, 
-                       (min-width: 360px) 206px"
-                src="{{ asset($BigWatch) }}" 
-                alt="Smart Watch"
+            <img srcset="
+                        {{ $BigWatch }} 333w, 
+                        {{ $mediumWatch }} 254w, 
+                        {{ $smallWatch }} 206w"
+                    sizes="(min-width: 1200px) 333px, 
+                               (min-width: 768px) 254px, 
+                               (min-width: 360px) 206px"
+                    src="{{ asset($BigWatch) }}" 
             />
         </div>
     </div>
