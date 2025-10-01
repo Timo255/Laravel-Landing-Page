@@ -10,9 +10,9 @@ use App\Notifications\Subscriber as SubscribeUser;
 
 class ProductLivewire extends Component
 {
-    public $BigWatch = '/images/big-watch.png';   // renamed file (no spaces)
-    public $mediumWatch = '/images/medium-watch.png';
-    public $smallWatch = '/images/small-watch.png';
+    public $BigWatch = '/images/big watch.png';
+    public $mediumWatch = '/images/mediam watch.png';
+    public $smallWatch = '/images/small watch.png';
 
     public bool $openPopUp = false;
 
